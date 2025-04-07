@@ -1355,46 +1355,56 @@
 
   </footer>
 
-  <div class="fixed-social-icons">
-    <a href="mailto:example@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
-    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-  </div>
-  <style>
+<!-- Fixed Social Icons -->
+<div class="fixed-social-icons">
+  <a href="mailto:example@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+  <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://www.twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+</div>
+
+<style>
+  .fixed-social-icons {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9999;
+  }
+
+  .fixed-social-icons a {
+    background-color: white;
+    color: #379f00;
+    font-size: 1.4rem;
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .fixed-social-icons a:hover {
+    background-color: #379f00;
+    color: white;
+    transform: scale(1.15);
+  }
+
+  /* ✅ Hide on screens smaller than 992px (Bootstrap lg breakpoint) */
+  @media (max-width: 1100px) {
     .fixed-social-icons {
-      position: fixed;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      z-index: 9999;
+      display: none;
     }
-    
-    .fixed-social-icons a {
-      background-color: white;
-      color: #379f00;
-      font-size: 1.4rem;
-      padding: 12px;
-      border-radius: 50%;
-      display: inline-block;
-      width: 45px;
-      height: 45px;
-      text-align: center;
-      line-height: 20px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-    }
-    
-    .fixed-social-icons a:hover {
-      background-color: #379f00;
-      color: white;
-      transform: scale(1.15);
-    }
-    </style>
+  }
+</style>
+
     
     
   
