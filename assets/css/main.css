@@ -1440,7 +1440,7 @@ section,
   height: 300px;
   top: -100px;
   right: -50px;
-  opacity: 0.1;
+  opacity: 0.4;
   transform: rotate(45deg);
   animation: shapes-float 3s ease-in-out infinite;
 }
@@ -1450,7 +1450,7 @@ section,
   height: 200px;
   bottom: -50px;
   left: -50px;
-  opacity: 0.15;
+  opacity: 0.4;
   transform: rotate(-15deg);
   animation: shapes-float 4s ease-in-out infinite;
 }
@@ -1460,7 +1460,7 @@ section,
   height: 150px;
   top: 20%;
   right: 15%;
-  opacity: 0.08;
+  opacity: 0.4;
   transform: rotate(15deg);
 }
 
@@ -1481,7 +1481,7 @@ section,
   height: 200px;
   top: -30px;
   left: 10%;
-  opacity: 0.1;
+  opacity: 0.4;
   transform: rotate(15deg);
   animation: shapes-float 4s ease-in-out infinite;
 }
@@ -1491,7 +1491,7 @@ section,
   height: 150px;
   bottom: 20px;
   right: 15%;
-  opacity: 0.15;
+  opacity: 0.4;
   transform: rotate(-10deg);
 }
 
