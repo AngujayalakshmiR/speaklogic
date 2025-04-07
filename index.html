@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,6 +35,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .profile-icon {
+  font-size: 60px; /* adjust as needed */
+  color: #57a030;     /* customize icon color */
+  border-radius: 50%;
+}
+  </style>
 </head>
 
 <body class="index-page">
@@ -95,18 +103,16 @@
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
               <div class="company-badge mb-4">
                 <i class="bi bi-gear-fill me-2"></i>
-                Working for your success
+                Communicate & Execute
               </div>
 
               <h1 class="mb-4">
-                Maecenas Vitae <br>
-                Consectetur Led <br>
-                <span class="accent-text">Vestibulum Ante</span>
+                We Promote Better<br>
+                <span class="accent-text">Communication</span>
               </h1>
 
               <p class="mb-4 mb-md-5">
-                Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
-                Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+                Welcome to SpeakLogic.org — a nonprofit promoting logical communication through books and software. Click links for problems, solutions, downloads, and hardcopy orders to improve rational thinking and understanding.
               </p>
 
               <div class="hero-buttons">
@@ -123,7 +129,7 @@
             <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
               <img src="assets/img/illustration-1.webp" alt="Hero Image" class="img-fluid">
 
-              <div class="customers-badge">
+              <!-- <div class="customers-badge">
                 <div class="customer-avatars">
                   <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar">
                   <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar">
@@ -132,8 +138,32 @@
                   <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar">
                   <span class="avatar more">12+</span>
                 </div>
-                <p class="mb-0 mt-2">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                <p class="mb-0 mt-2">Empowering 200+ minds with the logic to speak smarter.</p>
+              </div> -->
+              
+              <div class="customers-badge" style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+                <div class="row" style="width: 100%; align-items: stretch;">
+                  
+                  <div class="col-2 d-flex align-items-start">
+                    <i class="fas fa-quote-left fa-2x" style="color: #379f00; margin: 0;"></i>
+                  </div>
+                  
+                  <div class="col-8 d-flex justify-content-center align-items-center">
+                    <p class="text-center" style="font-weight: 500; font-size: 1.05rem; color: black; margin: 0;">
+                      Empowering 200+ minds with the logic to speak smarter.
+                    </p>
+                  </div>
+                  
+                  <div class="col-2 d-flex align-items-end justify-content-end">
+                    <i class="fas fa-quote-right fa-2x" style="color: #379f00; margin: 0;"></i>
+                  </div>
+              
+                </div>
               </div>
+              
+              
+              
+              
             </div>
           </div>
         </div>
@@ -145,8 +175,8 @@
                 <i class="bi bi-trophy"></i>
               </div>
               <div class="stat-content">
-                <h4>3x Won Awards</h4>
-                <p class="mb-0">Vestibulum ante ipsum</p>
+                <h4>80+ Solved</h4>
+                <p class="mb-0">Logic-based Challenges</p>
               </div>
             </div>
           </div>
@@ -156,8 +186,8 @@
                 <i class="bi bi-briefcase"></i>
               </div>
               <div class="stat-content">
-                <h4>6.5k Faucibus</h4>
-                <p class="mb-0">Nullam quis ante</p>
+                <h4>30+ Resources</h4>
+                <p class="mb-0">Books & Software</p>
               </div>
             </div>
           </div>
@@ -167,8 +197,8 @@
                 <i class="bi bi-graph-up"></i>
               </div>
               <div class="stat-content">
-                <h4>80k Mauris</h4>
-                <p class="mb-0">Etiam sit amet orci</p>
+                <h4>1000+ Users</h4>
+                <p class="mb-0">Improved Communication</p>
               </div>
             </div>
           </div>
@@ -178,8 +208,8 @@
                 <i class="bi bi-award"></i>
               </div>
               <div class="stat-content">
-                <h4>6x Phasellus</h4>
-                <p class="mb-0">Vestibulum ante ipsum</p>
+                <h4>24/7 Access</h4>
+                <p class="mb-0">Learn Anytime</p>
               </div>
             </div>
           </div>
@@ -198,43 +228,56 @@
 
           <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
             <span class="about-meta">MORE ABOUT US</span>
-            <h2 class="about-title">Voluptas enim suscipit temporibus</h2>
-            <p class="about-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <h2 class="about-title">Understanding the Root of Communication Issues</h2>
+            <p class="about-description">Effective communication is essential for executing everyday functions. Errors in internal or external communication can lead to flawed outcomes.            </p>
 
             <div class="row feature-list-wrapper">
               <div class="col-md-6">
                 <ul class="feature-list">
-                  <li><i class="bi bi-check-circle-fill"></i> Lorem ipsum dolor sit amet</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Consectetur adipiscing elit</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Sed do eiusmod tempor</li>
+                  <li><i class="bi bi-check-circle-fill"></i> 
+                    Communication enables collaboration</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Quality of communication affects results
+
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Functions rely on accurate communication</li>
                 </ul>
               </div>
               <div class="col-md-6">
                 <ul class="feature-list">
-                  <li><i class="bi bi-check-circle-fill"></i> Incididunt ut labore et</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Dolore magna aliqua</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ut enim ad minim veniam</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Internal & external views both matter</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Error-free communication = flawless function</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Separation of message and action is key</li>
                 </ul>
               </div>
             </div>
 
             <div class="info-wrapper">
               <div class="row gy-4">
-                <div class="col-lg-5">
+                <!-- <div class="col-lg-5">
                   <div class="profile d-flex align-items-center gap-3">
-                    <img src="assets/img/avatar-1.webp" alt="CEO Profile" class="profile-image">
+                    <i class="fas fa-user-circle profile-icon"></i>
+
                     <div>
-                      <h4 class="profile-name">Mario Smith</h4>
+                      <h4 class="profile-name">Mr. XYZ</h4>
                       <p class="profile-position">CEO &amp; Founder</p>
                     </div>
                   </div>
+                </div> -->
+                <div class="col-lg-6">
+                  <div class="contact-info d-flex align-items-center gap-2">
+                    <i class="fas fa-user-circle profile-icon"></i>
+                    <div>
+                      <p class="contact-label">Mr. XYZ</p>
+                      <p class="contact-number">CEO &amp; Founder</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                   <div class="contact-info d-flex align-items-center gap-2">
                     <i class="bi bi-telephone-fill"></i>
                     <div>
                       <p class="contact-label">Call us anytime</p>
-                      <p class="contact-number">+123 456-789</p>
+                      <p class="contact-number">+123 xxxxx xxxxx</p>
                     </div>
                   </div>
                 </div>
@@ -249,8 +292,8 @@
                 <img src="assets/img/about-2.webp" alt="Team Discussion" class="img-fluid small-image rounded-4">
               </div>
               <div class="experience-badge floating">
-                <h3>15+ <span>Years</span></h3>
-                <p>Of experience in business service</p>
+                <!-- <h3>15+ <span>Years</span></h3> -->
+                <span>Scroll below and explore <br>our books and softwares.</span>
               </div>
             </div>
           </div>
@@ -261,12 +304,12 @@
     </section><!-- /About Section -->
 
     <!-- Features Section -->
-    <section id="features" class="features section">
+    <section id="forums" class="features section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Forums</h2>
+        <p>Offers structured analysis to enhance understanding and decision-making.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -277,21 +320,21 @@
 
             <li class="nav-item">
               <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                <h4>Modisit</h4>
+                <h4>Speak Forum</h4>
               </a>
             </li><!-- End tab nav item -->
 
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-                <h4>Praesenti</h4>
+                <h4>Error Log</h4>
               </a><!-- End tab nav item -->
 
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
                 <h4>Explica</h4>
               </a>
-            </li><!-- End tab nav item -->
+            </li>End tab nav item -->
 
           </ul>
 
@@ -302,15 +345,15 @@
           <div class="tab-pane fade active show" id="features-tab-1">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Voluptatem dignissimos provident</h3>
+                <h3>The Speak Logic Forum</h3>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  In a world driven by communication, The Speak Logic Forum helps users connect, interact, and understand how communication shapes our actions.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Engage with others in logical discussions</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Explore the importance of communication</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Access the forum for collaborative insights</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span></span>Strengthen communication through shared experiences</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -322,16 +365,17 @@
           <div class="tab-pane fade" id="features-tab-2">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Neque exercitationem debitis</h3>
+                <h3>The Daily Error Log</h3>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  The Daily Error Log allows users to log and review real-world communication errors, helping improve clarity and understanding through daily analysis.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Log up to 10 communication entries daily</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Gain insights from real-time media analysis</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Join the forum to access the Daily Error Log</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Identify and correct flaws in everyday communication
+
+                  </span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -375,35 +419,36 @@
 
           <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="feature-box orange">
-              <i class="bi bi-award"></i>
-              <h4>Corporis voluptates</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              <i class="bi bi-chat-dots"></i> <!-- Updated icon -->
+              <h4>Purpose of Speak Logic</h4>
+              <p>Promotes better communication by incorporating logic into everyday exchanges.</p>
             </div>
-          </div><!-- End Feature Borx-->
-
+          </div><!-- End Feature Box -->
+          
           <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="feature-box blue">
-              <i class="bi bi-patch-check"></i>
-              <h4>Explicabo consectetur</h4>
-              <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
+              <i class="bi bi-journal-bookmark"></i> <!-- Updated icon -->
+              <h4>Educational Resources</h4>
+              <p>Offers books and software to support learning rational and logical communication skills.</p>
             </div>
-          </div><!-- End Feature Borx-->
-
+          </div><!-- End Feature Box -->
+          
           <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="feature-box green">
-              <i class="bi bi-sunrise"></i>
-              <h4>Ullamco laboris</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              <i class="bi bi-globe2"></i> <!-- Updated icon -->
+              <h4>Easy Access & Navigation</h4>
+              <p>Users can download or order hardcopy materials directly from the website for convenience.</p>
             </div>
-          </div><!-- End Feature Borx-->
-
+          </div><!-- End Feature Box -->
+          
           <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="feature-box red">
-              <i class="bi bi-shield-check"></i>
-              <h4>Labore consequatur</h4>
-              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+              <i class="bi bi-lightbulb"></i> <!-- Updated icon -->
+              <h4>Interactive Learning</h4>
+              <p>Includes problem and solution links for practical, hands-on understanding of logical thinking.</p>
             </div>
-          </div><!-- End Feature Borx-->
+          </div><!-- End Feature Box -->
+          <!-- End Feature Borx-->
 
         </div>
 
@@ -413,18 +458,21 @@
 
     <!-- Features 2 Section -->
     <section id="features-2" class="features-2 section">
-
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Solution</h2>
+        <p>Offers structured analysis to enhance understanding and decision-making.</p>
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row align-items-center">
 
           <div class="col-lg-4">
-
+<h3 class="text-end mb-5" style="color: #379f00;"><b>Solution Process</b></h3>
             <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="200">
               <div class="d-flex align-items-center justify-content-end gap-4">
                 <div class="feature-content">
-                  <h3>Use On Any Device</h3>
-                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.</p>
+                  <h3>Communication Drives Function</h3>
+                  <p>Effective communication is essential for successfully executing any function or task.</p>
                 </div>
                 <div class="feature-icon flex-shrink-0">
                   <i class="bi bi-display"></i>
@@ -435,8 +483,8 @@
             <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="300">
               <div class="d-flex align-items-center justify-content-end gap-4">
                 <div class="feature-content">
-                  <h3>Feather Icons</h3>
-                  <p>Phasellus ullamcorper ipsum rutrum nunc nunc nonummy metus vestibulum volutpat sapien arcu sed augue aliquam erat volutpat.</p>
+                  <h3>Error Correction Is Vital</h3>
+                  <p>To function properly, communication errors must first be identified and corrected.</p>
                 </div>
                 <div class="feature-icon flex-shrink-0">
                   <i class="bi bi-feather"></i>
@@ -444,11 +492,36 @@
               </div>
             </div><!-- End .feature-item -->
 
+            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="400">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Principle of Communication</h3>
+                  <p>Understanding this principle is necessary to recognize and fix communication issues.</p>
+                </div>
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-eye"></i>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="400">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Awareness is the First Step</h3>
+                  <p>We can't automatically learn principles — awareness and learning are required.</p>
+                </div>
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-eye"></i>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
             <div class="feature-item text-end" data-aos="fade-right" data-aos-delay="400">
               <div class="d-flex align-items-center justify-content-end gap-4">
                 <div class="feature-content">
-                  <h3>Retina Ready</h3>
-                  <p>Aenean tellus metus bibendum sed posuere ac mattis non nunc vestibulum fringilla purus sit amet fermentum aenean commodo.</p>
+                  <h3>Learning Enables Correction</h3>
+                  <p>Once the principle is learned, it helps in correcting errors for better function execution.
+                  </p>
                 </div>
                 <div class="feature-icon flex-shrink-0">
                   <i class="bi bi-eye"></i>
@@ -457,23 +530,24 @@
             </div><!-- End .feature-item -->
 
           </div>
-
+          
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="phone-mockup text-center">
               <img src="assets/img/phone-app-screen.webp" alt="Phone Mockup" class="img-fluid">
             </div>
           </div><!-- End Phone Mockup -->
-
+          
           <div class="col-lg-4">
-
+            <h3 class="text-start mb-5" style="color: #379f00;"><b>Learning The Principle</b></h3>
             <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
               <div class="d-flex align-items-center gap-4">
                 <div class="feature-icon flex-shrink-0">
                   <i class="bi bi-code-square"></i>
                 </div>
                 <div class="feature-content">
-                  <h3>W3c Valid Code</h3>
-                  <p>Donec vitae sapien ut libero venenatis faucibus nullam quis ante etiam sit amet orci eget eros faucibus tincidunt.</p>
+                  <h3>Analysis Leads to Insight</h3>
+                  <p>Communication must be analyzed to identify the source of errors and apply principles.
+                  </p>
                 </div>
               </div>
             </div><!-- End .feature-item -->
@@ -484,8 +558,8 @@
                   <i class="bi bi-phone"></i>
                 </div>
                 <div class="feature-content">
-                  <h3>Fully Responsive</h3>
-                  <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
+                  <h3>Portability & Presentation</h3>
+                  <p>Corrected communication is portable and presentable — the principle can be taught or learned anywhere.</p>
                 </div>
               </div>
             </div><!-- End .feature-item -->
@@ -496,8 +570,8 @@
                   <i class="bi bi-browser-chrome"></i>
                 </div>
                 <div class="feature-content">
-                  <h3>Browser Compatibility</h3>
-                  <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper nisi aenean vulputate.</p>
+                  <h3>Resources for Learning</h3>
+                  <p>Books, tutorials, and downloadable software are provided to help users learn effectively.</p>
                 </div>
               </div>
             </div><!-- End .feature-item -->
@@ -565,7 +639,7 @@
     </section><!-- /Call To Action Section -->
 
     <!-- Clients Section -->
-    <section id="clients" class="clients section">
+    <!-- <section id="clients" class="clients section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -618,7 +692,7 @@
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section>/Clients Section -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
@@ -950,7 +1024,7 @@
     </section><!-- /Pricing Section -->
 
     <!-- Faq Section -->
-    <section class="faq-9 faq section " id="faq">
+    <section class="faq-9 faq section light-background" id="faq">
 
       <div class="container">
         <div class="row">
