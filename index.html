@@ -24,6 +24,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -44,27 +45,31 @@
 
 
 
-
+/* SCROLL CONTAINER */
 .scroll-container {
   display: flex;
   overflow: hidden;
-  white-space: nowrap;
+  width: 100%;
   padding: 40px 0;
+  white-space: nowrap;
 }
 
+/* SCROLLING ROW */
 .scroll-row {
   display: flex;
-  animation: scroll-right 20s linear infinite;
   gap: 20px;
+  width: max-content;
+  animation: scroll-right 20s linear infinite;
 }
 
 .scroll-row.reverse {
   animation: scroll-left 20s linear infinite;
 }
 
+/* KEYFRAMES FOR SCROLLING */
 @keyframes scroll-right {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
@@ -73,59 +78,95 @@
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(50%);
+    transform: translateX(0);
   }
 }
 
+/* PAUSE ON HOVER */
+.scroll-row:hover {
+  animation-play-state: paused;
+}
+
+/* CARD STYLING */
 .card {
   position: relative;
-  width: 300px;
+  width:260px;
+  height: 250px; /* consistent height */
   border-radius: 20px;
+  border-color: #dddddd;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 190px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* Ensures the entire image fits inside */
   border-radius: 20px 20px 0 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
 }
 
+
 .card-footer {
+  width: 100%;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: #ffffffee;
+  background:white;
   padding: 10px 15px;
   border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
   display: flex;
-  gap: 10px;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  gap: 20px; /* space between buttons */
 }
 
 .card-footer button {
-  padding: 6px 12px;
-  border: none;
+  padding: 4px 8px;
+  border: 2px solid #379f00;
   border-radius: 8px;
-  background: #007bff;
-  color: white;
+  background: white;
+  color: #379f00;
   cursor: pointer;
   font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-footer button:hover {
-  background: #0056b3;
+  background: #2e8500;
+  color: white;
+  border-color: #2e8500;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
-.scroll-row:hover {
-  animation-play-state: paused;
+
+.card-footer button:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+
 
   </style>
 </head>
@@ -969,7 +1010,7 @@
     <section id="books" class="pricing section light-background">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Books</h2>
+        <h2>Books & Softwares</h2>
         <p>SpeakLogic empowers minds to think, speak, and solve with clarity.</p>
       </div>
 
@@ -981,131 +1022,48 @@
             <div class="scroll-row">
               <!-- Original Cards -->
               <div class="card">
-                <img src="assets/img/about-2.webp" alt="Card Image">
+                <img src="assets/img/books/book1.gif" alt="Card Image">
                 <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
+                  <button><i class="fas fa-download"></i> Download</button>
+                  <button><i class="fas fa-eye"></i> Preview</button>
+                  
                 </div>
               </div>
               <div class="card">
-                <img src="assets/img/about-5.webp" alt="Card Image">
+                <img src="assets/img/books/book5.png" alt="Card Image">
                 <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
+                  <button><i class="fas fa-download"></i> Download</button>
+                  <button><i class="fas fa-eye"></i> Preview</button>
+                  
                 </div>
               </div>
               <div class="card">
-                <img src="assets/img/apple-touch-icon.png" alt="Card Image">
+                <img src="assets/img/books/book6.png" alt="Card Image">
                 <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
-                </div>
-              </div>
-              <!-- Duplicate Cards for seamless scroll -->
-              <div class="card">
-                <img src="assets/img/about-2.webp" alt="Card Image">
-                <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
+                  <button><i class="fas fa-download"></i> Download</button>
+                  <button><i class="fas fa-eye"></i> Preview</button>
+                  
                 </div>
               </div>
               <div class="card">
-                <img src="assets/img/about-5.webp" alt="Card Image">
+                <img src="assets/img/books/book2.gif" alt="Card Image">
                 <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
+                  <button><i class="fas fa-download"></i> Download</button>
+                  <button><i class="fas fa-eye"></i> Preview</button>
+                  
                 </div>
               </div>
               <div class="card">
-                <img src="assets/img/apple-touch-icon.png" alt="Card Image">
+                <img src="assets/img/books/book3.gif" alt="Card Image">
                 <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
+                  <button><i class="fas fa-download"></i> Download</button>
+                  <button><i class="fas fa-eye"></i> Preview</button>
+                  
                 </div>
               </div>
+              
             </div>
           </div>
-          
-
-          <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-card popular">
-              <div class="popular-badge">Most Popular</div>
-              <h3>Standard Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">19.9</span>
-                <span class="period">/ month</span>
-              </div>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-
-              <h4>Featured Included:</h4>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Lorem ipsum dolor sit amet
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Consectetur adipiscing elit
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Sed do eiusmod tempor
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Ut labore et dolore magna
-                </li>
-              </ul>
-
-              <a href="#" class="btn btn-light">
-                Buy Now
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="pricing-card">
-              <h3>Premium Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">39.9</span>
-                <span class="period">/ month</span>
-              </div>
-              <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
-
-              <h4>Featured Included:</h4>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Temporibus autem quibusdam
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Saepe eveniet ut et voluptates
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Nam libero tempore soluta
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Cumque nihil impedit quo
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Maxime placeat facere possimus
-                </li>
-              </ul>
-
-              <a href="#" class="btn btn-primary">
-                Buy Now
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div> -->
-
         </div>
         <div class="row g-4 justify-content-center">
           <!-- Row 2: Scroll Left -->
@@ -1113,46 +1071,42 @@
             <div class="scroll-row reverse">
               <!-- Original Cards -->
               <div class="card">
-                <img src="assets/img/about-2.webp" alt="Card Image">
+                <img src="assets/img/software/infodesktop2012.png" alt="Card Image">
                 <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
+                  <button><i class="fas fa-download"></i> Download</button>
+                  <button><i class="fas fa-video"></i> Video</button>
                 </div>
               </div>
               <div class="card">
-                <img src="assets/img/about-5.webp" alt="Card Image">
+                <img src="assets/img/software/infoie2012.png" alt="Card Image">
                 <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
+                  <button><i class="fas fa-download"></i> Download</button>
+                  <button><i class="fas fa-video"></i> Video</button>
+                  
                 </div>
               </div>
               <div class="card">
-                <img src="assets/img/apple-touch-icon.png" alt="Card Image">
+                <img src="assets/img/software/infooffice2012.png" alt="Card Image">
                 <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
-                </div>
-              </div>
-              <!-- Duplicate Cards for seamless scroll -->
-              <div class="card">
-                <img src="assets/img/about-2.webp" alt="Card Image">
-                <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
+                  <button><i class="fas fa-download"></i> Download</button>
+                  <button><i class="fas fa-video"></i> Video</button>
+                  
                 </div>
               </div>
               <div class="card">
-                <img src="assets/img/about-5.webp" alt="Card Image">
+                <img src="assets/img/software/infovs2012.png" alt="Card Image">
                 <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
+                  <button><i class="fas fa-download"></i> Download</button>
+                  <button><i class="fas fa-video"></i> Video</button>
+                  
                 </div>
               </div>
               <div class="card">
-                <img src="assets/img/apple-touch-icon.png" alt="Card Image">
+                <img src="assets/img/software/sps11.png" alt="Card Image">
                 <div class="card-footer">
-                  <button>Download</button>
-                  <button>Preview</button>
+                  <button><i class="fas fa-download"></i> Download</button>
+                  <button><i class="fas fa-video"></i> Video</button>
+                  
                 </div>
               </div>
             </div>
@@ -1584,7 +1538,14 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    // Get all scroll rows (normal and reverse)
+    document.querySelectorAll('.scroll-row').forEach(row => {
+      row.innerHTML += row.innerHTML; // duplicate for infinite scroll
+    });
+  </script>
+  
+  
 </body>
 
 </html>
